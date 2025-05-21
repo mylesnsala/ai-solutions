@@ -1,0 +1,254 @@
+[debug] [2025-05-13T18:50:04.814Z] ----------------------------------------------------------------------
+[debug] [2025-05-13T18:50:04.815Z] Command:       /Users/bakangmonei/.nvm/versions/node/v18.20.7/bin/node /Users/bakangmonei/.nvm/versions/node/v18.20.7/bin/firebase deploy --only functions
+[debug] [2025-05-13T18:50:04.815Z] CLI Version:   13.35.1
+[debug] [2025-05-13T18:50:04.815Z] Platform:      darwin
+[debug] [2025-05-13T18:50:04.815Z] Node Version:  v18.20.7
+[debug] [2025-05-13T18:50:04.816Z] Time:          Tue May 13 2025 20:50:04 GMT+0200 (Central Africa Time)
+[debug] [2025-05-13T18:50:04.816Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-13T18:50:04.901Z] Object "/storage" in "firebase.json" has unknown property: {"additionalProperty":"cors"}
+[debug] [2025-05-13T18:50:04.901Z] Field "/storage" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-05-13T18:50:04.902Z] Field "/storage" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-05-13T18:50:04.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-13T18:50:04.904Z] > authorizing via signed-in user (bakangmonei2@gmail.com)
+[debug] [2025-05-13T18:50:04.904Z] [iam] checking project thato-nsala-ai-solutions for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-05-13T18:50:04.904Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:04.904Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:04.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions:testIamPermissions [none]
+[debug] [2025-05-13T18:50:04.905Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions:testIamPermissions x-goog-quota-user=projects/thato-nsala-ai-solutions
+[debug] [2025-05-13T18:50:04.905Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-13T18:50:06.683Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions:testIamPermissions 200
+[debug] [2025-05-13T18:50:06.684Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-13T18:50:06.684Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:06.684Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:06.684Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/thato-nsala-ai-solutions/serviceAccounts/thato-nsala-ai-solutions@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-05-13T18:50:06.684Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/thato-nsala-ai-solutions/serviceAccounts/thato-nsala-ai-solutions@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-05-13T18:50:08.370Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/thato-nsala-ai-solutions/serviceAccounts/thato-nsala-ai-solutions@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-05-13T18:50:08.370Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/thato-nsala-ai-solutions/serviceAccounts/thato-nsala-ai-solutions@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'thato-nsala-ai-solutions'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-05-13T18:50:08.374Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:08.374Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:08.374Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions [none]
+[debug] [2025-05-13T18:50:10.127Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions 200
+[debug] [2025-05-13T18:50:10.127Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions {"projectNumber":"58843412740","projectId":"thato-nsala-ai-solutions","lifecycleState":"ACTIVE","name":"thato-nsala-ai-solutions","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-02T05:22:15.146479Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.129Z] Checked if tokens are valid: true, expires at: 1747165431408
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-05-13T18:50:10.130Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.130Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:10.130Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-05-13T18:50:10.130Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/thato-nsala-ai-solutions
+[debug] [2025-05-13T18:50:10.131Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-05-13T18:50:10.131Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/thato-nsala-ai-solutions
+[debug] [2025-05-13T18:50:10.133Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudbuild.googleapis.com [none]
+[debug] [2025-05-13T18:50:10.133Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudbuild.googleapis.com x-goog-quota-user=projects/thato-nsala-ai-solutions
+[debug] [2025-05-13T18:50:10.134Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/artifactregistry.googleapis.com [none]
+[debug] [2025-05-13T18:50:10.134Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/artifactregistry.googleapis.com x-goog-quota-user=projects/thato-nsala-ai-solutions
+[debug] [2025-05-13T18:50:12.057Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudbuild.googleapis.com 200
+[debug] [2025-05-13T18:50:12.058Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-05-13T18:50:12.059Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/runtimeconfig.googleapis.com 200
+[debug] [2025-05-13T18:50:12.059Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-05-13T18:50:12.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudfunctions.googleapis.com 200
+[debug] [2025-05-13T18:50:12.061Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-05-13T18:50:12.062Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/artifactregistry.googleapis.com 200
+[debug] [2025-05-13T18:50:12.062Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thato-nsala-ai-solutions/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-05-13T18:50:12.062Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:12.063Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:12.063Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/adminSdkConfig [none]
+[debug] [2025-05-13T18:50:12.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/adminSdkConfig 200
+[debug] [2025-05-13T18:50:12.887Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/adminSdkConfig {"projectId":"thato-nsala-ai-solutions","databaseURL":"https://thato-nsala-ai-solutions-default-rtdb.firebaseio.com","storageBucket":"thato-nsala-ai-solutions.firebasestorage.app"}
+[debug] [2025-05-13T18:50:12.888Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:12.888Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:12.888Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/configs [none]
+[debug] [2025-05-13T18:50:14.041Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/configs 200
+[debug] [2025-05-13T18:50:14.042Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/thato-nsala-ai-solutions/configs {}
+[debug] [2025-05-13T18:50:14.045Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-05-13T18:50:14.670Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.7.0",
+    "nodemailer": "^6.9.9"
+  },
+  "private": true
+}
+[debug] [2025-05-13T18:50:14.670Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-05-13T18:50:14.671Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-05-13T18:50:14.680Z] Found firebase-functions binary at '/Users/bakangmonei/Developer/Projects/thato-nsala-ai-solutions/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8061
+
+[debug] [2025-05-13T18:50:14.943Z] Got response from /__/functions.yaml {"endpoints":{"sendEmailReply":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/thato-nsala-ai-solutions/databases/(default)/documents/notifications/{notificationId}"},"retry":false},"labels":{},"entryPoint":"sendEmailReply"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged /Users/bakangmonei/Developer/Projects/thato-nsala-ai-solutions/functions (38.4 KB) for uploading 
+[debug] [2025-05-13T18:50:14.971Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:14.971Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:14.971Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/-/functions [none]
+[debug] [2025-05-13T18:50:16.136Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/-/functions 200
+[debug] [2025-05-13T18:50:16.137Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/-/functions {}
+[debug] [2025-05-13T18:50:16.137Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:16.137Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:16.138Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/thato-nsala-ai-solutions/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-05-13T18:50:17.580Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/thato-nsala-ai-solutions/locations/-/functions 200
+[debug] [2025-05-13T18:50:17.580Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/thato-nsala-ai-solutions/locations/-/functions {}
+[debug] [2025-05-13T18:50:17.584Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:17.584Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:17.585Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions [none]
+[debug] [2025-05-13T18:50:19.318Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions 200
+[debug] [2025-05-13T18:50:19.319Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/thato-nsala-ai-solutions {"projectNumber":"58843412740","projectId":"thato-nsala-ai-solutions","lifecycleState":"ACTIVE","name":"thato-nsala-ai-solutions","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-02T05:22:15.146479Z"}
+[debug] [2025-05-13T18:50:19.322Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:19.322Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:19.322Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-05-13T18:50:19.322Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2025-05-13T18:50:29.459Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-05-13T18:50:29.459Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip?GoogleAccessId=service-58843412740@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747164029&Signature=BUu6akbx%2Fh216gH29uyP5%2FjUXuDwS0s8D%2FeWcQU3MdRuEw3bQI1bsrfz6fM%2B%2Fk3%2FveFvylJNLzIBFLlL2hHUkOJAMFHVP8M2mfVUXgv%2FCFG%2B735UnMPNbeZi2BwwgzdU0Kuk%2BrYz30%2Fe5LkGC2XyfSVnwCUyvVOFQ5UtmtkuCALGnTp%2BPjJ%2BbwkhWqPh5JQtFdvLKuCzhKXNDALHuQrgvMO5zJqUdsDkjg3MTdBNhYQIpU%2F155O1S5S8NLeF%2B7ByHELwWw0n5ZSeOwWNucPbuQwWos9F6XTDiDzjdoQxmKlHM%2FsoqrTlhZHd2bl10W6iaUYqLAg2l%2FqP8c7Tv2%2Fg9Q%3D%3D"}
+[debug] [2025-05-13T18:50:29.462Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip GoogleAccessId=service-58843412740%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1747164029&Signature=BUu6akbx%2Fh216gH29uyP5%2FjUXuDwS0s8D%2FeWcQU3MdRuEw3bQI1bsrfz6fM%2B%2Fk3%2FveFvylJNLzIBFLlL2hHUkOJAMFHVP8M2mfVUXgv%2FCFG%2B735UnMPNbeZi2BwwgzdU0Kuk%2BrYz30%2Fe5LkGC2XyfSVnwCUyvVOFQ5UtmtkuCALGnTp%2BPjJ%2BbwkhWqPh5JQtFdvLKuCzhKXNDALHuQrgvMO5zJqUdsDkjg3MTdBNhYQIpU%2F155O1S5S8NLeF%2B7ByHELwWw0n5ZSeOwWNucPbuQwWos9F6XTDiDzjdoQxmKlHM%2FsoqrTlhZHd2bl10W6iaUYqLAg2l%2FqP8c7Tv2%2Fg9Q%3D%3D
+[debug] [2025-05-13T18:50:29.462Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip [stream]
+[debug] [2025-05-13T18:50:30.646Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip 200
+[debug] [2025-05-13T18:50:30.646Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip [omitted]
+[info] ✔  functions: functions folder uploaded successfully 
+[info] i  functions: creating Node.js 20 (1st Gen) function sendEmailReply(us-central1)... 
+[debug] [2025-05-13T18:50:30.652Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:30.652Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:30.652Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions [none]
+[debug] [2025-05-13T18:50:30.652Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions {"name":"projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply","sourceUploadUrl":"https://storage.googleapis.com/uploads-867724066225.us-central1.cloudfunctions.appspot.com/c36da0d9-58a6-455c-a2e5-1a8d793c98ff.zip?GoogleAccessId=service-58843412740@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747164029&Signature=BUu6akbx%2Fh216gH29uyP5%2FjUXuDwS0s8D%2FeWcQU3MdRuEw3bQI1bsrfz6fM%2B%2Fk3%2FveFvylJNLzIBFLlL2hHUkOJAMFHVP8M2mfVUXgv%2FCFG%2B735UnMPNbeZi2BwwgzdU0Kuk%2BrYz30%2Fe5LkGC2XyfSVnwCUyvVOFQ5UtmtkuCALGnTp%2BPjJ%2BbwkhWqPh5JQtFdvLKuCzhKXNDALHuQrgvMO5zJqUdsDkjg3MTdBNhYQIpU%2F155O1S5S8NLeF%2B7ByHELwWw0n5ZSeOwWNucPbuQwWos9F6XTDiDzjdoQxmKlHM%2FsoqrTlhZHd2bl10W6iaUYqLAg2l%2FqP8c7Tv2%2Fg9Q%3D%3D","entryPoint":"sendEmailReply","runtime":"nodejs20","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"b17b6f909ca9886804497c79b4d81ac9755aef45"},"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/thato-nsala-ai-solutions/databases/(default)/documents/notifications/{notificationId}"},"minInstances":null,"maxInstances":null,"ingressSettings":null,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"thato-nsala-ai-solutions\",\"databaseURL\":\"https://thato-nsala-ai-solutions-default-rtdb.firebaseio.com\",\"storageBucket\":\"thato-nsala-ai-solutions.firebasestorage.app\"}","GCLOUD_PROJECT":"thato-nsala-ai-solutions","EVENTARC_CLOUD_EVENT_SOURCE":"projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply"},"serviceAccountEmail":null,"availableMemoryMb":null,"timeout":null,"vpcConnector":null,"vpcConnectorEgressSettings":null,"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[debug] [2025-05-13T18:50:33.039Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions 400
+[debug] [2025-05-13T18:50:33.039Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions {"error":{"code":400,"message":"Failed to create 1st Gen function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply: Default service account '58843412740-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.","status":"FAILED_PRECONDITION"}}
+[warn] ⚠  functions: failed to create function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply 
+[error] Failed to create function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply
+[debug] [2025-05-13T18:50:33.042Z] Total Function Deployment time: 2391
+[debug] [2025-05-13T18:50:33.043Z] 1 Functions Deployed
+[debug] [2025-05-13T18:50:33.043Z] 1 Functions Errored
+[debug] [2025-05-13T18:50:33.043Z] 0 Function Deployments Aborted
+[debug] [2025-05-13T18:50:33.043Z] Average Function Deployment time: 2390
+[info] 
+[info] Functions deploy had errors with the following functions:
+	sendEmailReply(us-central1)
+[info] i  functions: cleaning up build files... 
+[debug] [2025-05-13T18:50:33.585Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:33.585Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:33.585Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:33.585Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:33.586Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/repositories/gcf-artifacts/packages/send_email_reply [none]
+[debug] [2025-05-13T18:50:33.587Z] >>> [apiv2][query] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list [none]
+[debug] [2025-05-13T18:50:34.996Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/repositories/gcf-artifacts/packages/send_email_reply 404
+[debug] [2025-05-13T18:50:34.996Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/repositories/gcf-artifacts/packages/send_email_reply {"error":{"code":404,"message":"Package \"projects/thato-nsala-ai-solutions/locations/us-central1/repositories/gcf-artifacts/packages/send_email_reply\" was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-13T18:50:36.119Z] <<< [apiv2][status] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list 404
+[debug] [2025-05-13T18:50:36.119Z] <<< [apiv2][body] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2025-05-13T18:50:36.119Z] Failed docker command with error  Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2025-05-13T18:50:36.121Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:36.121Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:36.121Z] >>> [apiv2][query] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list [none]
+[debug] [2025-05-13T18:50:37.021Z] <<< [apiv2][status] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list 404
+[debug] [2025-05-13T18:50:37.021Z] <<< [apiv2][body] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2025-05-13T18:50:37.022Z] Failed docker command with error  Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2025-05-13T18:50:37.124Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:37.124Z] Checked if tokens are valid: true, expires at: 1747165431408
+[debug] [2025-05-13T18:50:37.125Z] >>> [apiv2][query] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list [none]
+[debug] [2025-05-13T18:50:37.927Z] <<< [apiv2][status] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list 404
+[debug] [2025-05-13T18:50:37.928Z] <<< [apiv2][body] GET https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2025-05-13T18:50:37.928Z] Failed docker command with error  Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/thato-nsala-ai-solutions/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[warn] ⚠  functions: Unhandled error cleaning up build images. This could result in a small monthly bill if not corrected. You can attempt to delete these images by redeploying or you can delete them manually at https://console.cloud.google.com/gcr/images/thato-nsala-ai-solutions/us/gcf 
+[debug] [2025-05-13T18:50:37.929Z] Functions deploy failed.
+[debug] [2025-05-13T18:50:37.929Z] {
+  "endpoint": {
+    "id": "sendEmailReply",
+    "project": "thato-nsala-ai-solutions",
+    "region": "us-central1",
+    "entryPoint": "sendEmailReply",
+    "platform": "gcfv1",
+    "runtime": "nodejs20",
+    "eventTrigger": {
+      "eventType": "providers/cloud.firestore/eventTypes/document.create",
+      "retry": false,
+      "eventFilters": {
+        "resource": "projects/thato-nsala-ai-solutions/databases/(default)/documents/notifications/{notificationId}"
+      }
+    },
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"thato-nsala-ai-solutions\",\"databaseURL\":\"https://thato-nsala-ai-solutions-default-rtdb.firebaseio.com\",\"storageBucket\":\"thato-nsala-ai-solutions.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "thato-nsala-ai-solutions",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply"
+    },
+    "codebase": "default",
+    "targetedByOnly": false,
+    "hash": "b17b6f909ca9886804497c79b4d81ac9755aef45"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Failed to create 1st Gen function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply: Default service account '58843412740-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.",
+            "status": "FAILED_PRECONDITION"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "Request to https://cloudfunctions.googleapis.com/v1/projects/thato-nsala-ai-solutions/locations/us-central1/functions had HTTP Error: 400, Failed to create 1st Gen function projects/thato-nsala-ai-solutions/locations/us-central1/functions/sendEmailReply: Default service account '58843412740-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2025-05-13T18:50:38.398Z] Error: Failed to create function sendEmailReply in region us-central1
+    at /Users/bakangmonei/.nvm/versions/node/v18.20.7/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:52:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV1Function (/Users/bakangmonei/.nvm/versions/node/v18.20.7/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:182:32)
+    at async Fabricator.createEndpoint (/Users/bakangmonei/.nvm/versions/node/v18.20.7/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:134:13)
+    at async handle (/Users/bakangmonei/.nvm/versions/node/v18.20.7/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
